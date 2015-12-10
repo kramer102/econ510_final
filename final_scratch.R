@@ -39,7 +39,7 @@ cor[cor > .5]
 # dfNum <- creditdf
 # 
 # creditdf$
-## Variables significant for default
+## Variables significant for default####
 
 ### just going through the motions to get something -- I think this is probit or logit
 
