@@ -1,0 +1,23 @@
+---
+title: "Fall 2015 Final Exam"
+author: "Robert Kramer"
+date: "December 9, 2015"
+output: html_document
+---
+# Summary of *Sample selection in credit scoring models*
+  The discision to issue a credit card is normally based on a statistical model of historical data from previous cardholders.  This introduces a potential bias because there is no data on the applicants that where declined.  It is likely there exist a correlation between probability of default and application acceptence.  The author explains the current selection model.  Commercial banks normally use linear discriminant analysis.  This analysis assumes there exist two populations.  Those that will default and those that will not default.  The analysis looks at each prediction indipendently and then assigns a posterior probability using bayes theorem.  The advantage is speed and linearity, but the model cannot account for conditional probabilities or non normal distributions.  The author then goes on to decribe logit and probit methods using a general linear model.  These methods directly model the conditional probabilities Pr(Y | x).  The authors describe the classification criteria as the probability a card has been issued and the cardholder then defaults.  $prob[D_{i}=1|C_{i}=1]$.  The traditional analysis is shown to require C and D be independent.  It is suggested C and D are in fact correlated.  A bivariate probit specification model is posited to account for this bias.  The new model uses a Default equation : $D_{i}=\beta {x _{i}}'+\varepsilon _{i}$.  Cardholder equation: $C^{*}_{i}=\gamma {}'\nu _{i}+ \mu _{i}$, and Selectivity given by $[\varepsilon _{i}\mu _{i}] \sim N2[0,0,1,\rho_{\varepsilon \mu }]$
+  
+  The probability of default given that a loan is accepted:
+  $$prob[D_{i}=1|C_{i}=1] = \frac{\Phi _{2}[\beta^{{}'}\chi _{i}],\gamma {\nu _{i}}',\rho ]}{\Phi [\gamma, {\nu _{i}}']}$$
+
+```{r}
+
+```
+
+
+
+```{r, echo=FALSE}
+
+```
+
+
